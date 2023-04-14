@@ -229,7 +229,6 @@ def process_pdf(pdf_file):
         return True 
                 
     except Exception as e:
-        print (f"date: {date} para la URL {url}")
 
         print(f"Se produjo un error al procesar el archivo PDF con {url}: {e}")
         return False
