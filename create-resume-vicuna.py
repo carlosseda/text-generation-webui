@@ -1,16 +1,12 @@
 import os
-import multiprocessing as mp
 import re
 import hashlib
 import json
 import locale
 import fitz
 import requests
-import tkinter as tk
 from datetime import datetime
-from tkinter import filedialog
 from tqdm.auto import tqdm
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 def process_folder():
 
