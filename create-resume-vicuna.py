@@ -15,10 +15,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 def process_folder():
 
     # Crear una ventana de selección de carpeta
-    root = tk.Tk()
-    root.withdraw()
-    folder_path = filedialog.askdirectory()
-    root.destroy()
+    folder_path = "./pdf"
     
     #Procesar los archivos PDF en la carpeta seleccionada
     if folder_path:
@@ -29,9 +26,8 @@ def process_folder():
 
             with tqdm(total=len(pdf_files), desc="Procesando archivos") as pbar:
                 for pdf_file in pdf_files:
-                    result = process_pdf(pdf_file)
-                    if result:
-                        pbar.update()
+                    process_pdf(pdf_file)
+                    pbar.update()
 
             return True
 
