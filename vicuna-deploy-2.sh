@@ -4,6 +4,7 @@ apt install -y build-essential
 apt install -y language-pack-es
 apt install -y language-pack-ca
 apt install -y unzip
+conda init bash
 conda activate textgen
 pip install -r requirements.txt -q
 pip install -i https://test.pypi.org/simple/ bitsandbytes-cuda113 -q
