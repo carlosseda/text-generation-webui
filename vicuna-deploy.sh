@@ -2,10 +2,10 @@
 
 apt update
 apt install -y build-essential
-apt install language-pack-es
-apt install language-pack-ca
+apt install -y language-pack-es
+apt install -y language-pack-ca
 pip install --upgrade pymupdf -q
-apt install unzip
+apt install -y unzip
 conda create -n textgen python=3.10.9
 conda activate textgen
 pip install -r requirements.txt -q
