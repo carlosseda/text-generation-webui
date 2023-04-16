@@ -12,3 +12,4 @@ cd GPTQ-for-LLaMa
 pip install -r requirements.txt -q
 cd ../..
 pip install --upgrade pymupdf -q
+python server.py --model TheBloke_vicuna-13B-1.1-GPTQ-4bit-128g --wbits 4 --groupsize 128 --model_type LlaMa --listen --no-stream &
